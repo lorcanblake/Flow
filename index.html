@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flow</title>
+    <meta name="author" content="@ayynfj">
+    <meta name="description" content="A tiny fully responsive, classless css framework.">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="flow.min.css"> </head>
+
+<body>
+    <header>
+        <h1>Flow</h1>
+        <p>Default HTML made responsive using classless CSS. Inspired by &#40;and makes heavy use of&#41; <a href="https://github.com/mrmrs/fluidity" title="Fluidity on Github">Fluidity</a>.</p>
+        <section>
+            <button><a href="" title="Download the code">Download</a></button>
+        </section>
+    </header>
+    <main>
+        <article>
+            <h2>Text and links</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, <a href="#">facilisis luctus</a>, metus.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <h3>Example code</h3> <pre><code>
+&lt;article&gt;
+  &lt;h2&gt;Text and links&lt;/h2&gt;
+    &lt;p&gt; Text with a &lt;a href="#"&gt;link&lt;/a&gt; &lt;/p&gt;
+&lt;/article&gt;
+          </code></pre> </article>
+        <article>
+            <h2>Images</h2> <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a498b333845568.56ba48cf9fb4e.jpg" alt="Stationmaster's House" />
+            <h3>Example code</h3> <pre><code>
+&lt;article&gt;
+    &lt;img src="really-wide-image.png" alt="Really wide image" /&gt;
+&lt;/article&gt;
+          </code></pre> </article>
+        <article>
+            <h2>Tables</h2>
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>This</th>
+                            <th>table</th>
+                            <th>has</th>
+                            <th>lots</th>
+                            <th>and</th>
+                            <th>lots</th>
+                            <th>and</th>
+                            <th>lots</th>
+                            <th>and</th>
+                            <th>lots</th>
+                            <th>of</th>
+                            <th>headers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#" title="Link in table cell">Link in table cell</a></td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table cell</td>
+                            <td><a href="#" title="Link in table cell">Link in table cell</a></td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td><a href="#" title="Link in table cell">Link in table cell</a></td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <h3>Example code</h3> <pre>
+          <code>
+&lt;section&gt;
+ &lt;table&gt;
+   &lt;!-- table contents --&gt;
+ &lt;/table&gt;
+&lt;/section&gt;
+          </code>
+        </pre> </article>
+        <article>
+            <h2>Preformatted text</h2>
+            <section> <pre>
+            <code>
+# Add the strings before and after around each parm and print
+def surround(before, after, *items)
+    items.each { |x| print before, x, after, "\n" }
+end
+
+surround('[', ']', 'this', 'that', 'the other')
+print "\n"
+
+surround('&lt;', '&gt;', 'Snakes', 'Turtles', 'Snails', 'Salamanders', 'Slugs',
+        'Newts')
+print "\n"
+
+def boffo(a, b, c, d)
+    print "a = #{a} b = #{b}, c = #{c}, d = #{d}\n"
+end
+
+# Use * to adapt between arrays and arguments
+a1 = ['snack', 'fast', 'junk', 'pizza']
+a2 = [4, 9]
+boffo(*a1)
+boffo(17, 3, *a2)
+            </code>
+          </pre> </section>
+            <h3>Example code</h3> <pre><code>
+&lt;section&gt;
+  &lt;pre&gt;
+    &lt;code&gt;
+      &lt;!-- code here --&gt;
+    &lt;/code&gt;
+  &lt;/pre&gt;
+&lt;/section&gt;
+          </code></pre> </article>
+    </main>
+    <footer>
+        <p> A thing mostly by <a href="http://mrmrs.cc" title="mrmrs • designer">mrmrs</a> and tweaked by <a href="http://lorcan.click" title="Lorcan • code, design and photography">Lorcan</a> / <a href="http://opensource.org/licenses/MIT">MIT license</a> </p>
+    </footer>
+</body>
+
+</html>
