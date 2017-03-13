@@ -1,12 +1,14 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 /*
   FLUIDITY v0.1.0
   @mrmrs - http://mrmrs.cc
   MIT
 */
 
-::-webkit-scrollbar {
-display: none;
-}
 
 /*
   Responsive Utilities
@@ -35,7 +37,10 @@ textarea {
   Defaults to 16x9
 */
 
-canvas, iframe, video, svg {
+canvas,
+iframe,
+video,
+svg {
     padding-top: 56.25%;
     height: 100%;
     position: relative;
@@ -48,9 +53,7 @@ canvas, iframe, video, svg {
 }
 
 
-/* Components
-
-*/
+/* Components */
 
 body {
     max-width: 76em;
@@ -65,21 +68,26 @@ a {
     text-decoration: none;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     margin: 4rem 0rem;
 }
 
-section, article{
+section,
+article {
     margin: 2rem 0rem;
     overflow-x: scroll;
 }
 
-code{
+code {
     margin: 1.6rem 0rem;
 }
 
 button {
-    padding:0; margin:0,border:0;background-color:transparent;
+    padding: 0;
+    margin: 0, border: 0;
+    background-color: transparent;
     display: inline-block;
     padding: .8em;
     text-decoration: none;
@@ -98,18 +106,20 @@ button a:visited {
 }
 
 button a:hover {
-   opacity: 1;
+    opacity: 1;
 }
 
 button a:active {
     opacity: 1;
 }
 
-tr, td, th{
+tr,
+td,
+th {
     padding: .6%;
 }
 
-th{
+th {
     text-align: left;
 }
 
